@@ -1,0 +1,40 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+input {
+  box-sizing: border-box;
+  @apply border border-gray-400 rounded px-3 py-2 leading-none outline-none w-full mb-3 mt-2;
+}
+
+input:focus {
+  @apply border-green-500;
+}
+
+label {
+  @apply font-medium;
+}
+
+p.error {
+  @apply text-red-700 text-xs mb-1;
+}
+
+p.help {
+  @apply text-xs mb-1 text-gray-600;
+}
+
+.btn {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn:hover {
+  @apply bg-blue-700;
+}
+
+.btn.btn-success {
+  @apply bg-green-400;
+}
+
+.btn.btn-success:hover {
+  @apply bg-green-700;
+}
